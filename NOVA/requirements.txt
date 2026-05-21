@@ -1,0 +1,11 @@
+SpeechRecognition
+pyttsx3
+psutil
+requests
+pyjokes
+vosk
+pyaudio
+pycaw
+comtypes
+Pillow
+google-generativeai

@@ -1,0 +1,25 @@
+{
+    "assistant": {
+        "name": "NOVA",
+        "wake_word": "nova",
+        "address_as": "boss",
+        "language": "en-IN"
+    },
+    "voice": {
+        "tts_rate": 175,
+        "tts_volume": 1.0,
+        "preferred_voice": "female",
+        "speech_timeout": 5,
+        "energy_threshold": 300
+    },
+    "features": {
+        "wake_word_enabled": true,
+        "multi_language": true,
+        "offline_fallback": true
+    },
+    "api": {
+        "weather_api_key": "be5bfdaf2ddd0abac7bf0231ed723cfd",
+        "weather_city": "Indore",
+        "gemini_api_key": "AIzaSyAzNym6uSeF0ag19oLw-Isf2CI9o2V_Eq0"
+    }
+}
