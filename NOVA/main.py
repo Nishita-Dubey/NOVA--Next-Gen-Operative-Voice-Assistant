@@ -9,7 +9,12 @@ Run modes:
 Example:
   python main.py --mode gui --lang en-IN
 """
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 import argparse
 from utils.logger import get_logger
 
