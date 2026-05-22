@@ -28,44 +28,92 @@ Features
 
 🔊 Supports online and offline voice processing
 
+
 Technologies Used
-Programming Language
+
+
+Programming Language:
+
+
 Python
-Libraries & Tools
+
+
+Libraries & Tools:
+
+
 SpeechRecognition
+
 pyttsx3
+
 Tkinter
+
 Vosk
+
 PyAudio
+
 requests
+
 psutil
+
 Pillow
+
 OpenAI API
+
 Google Generative AI API
+
 
 Project Structure
 
+```bash
 NOVA/
-│── assets/
-│── models/
-│── gui/
-│── voice/
-│── utils/
-│── main.py
-│── requirements.txt
-│── README.md
+├── assets/
+├── gui/
+├── models/
+├── utils/
+├── voice/
+├── main.py
+├── requirements.txt
+└── README.md
+```
 
 Installation
 
+
 Clone the Repository
+
 git clone https://github.com/your-username/NOVA.git
+
 cd NOVA
 
+
 Install Required Libraries
+
+
 pip install -r requirements.txt
 
+
 Run the Project
+
+
 Once the project starts, users can interact with NOVA using either voice commands or text input.
+
+
+
+Example Commands
+
+
+
+"Open Chrome"
+
+"Search Python tutorials"
+
+"Open folder NOVA"
+
+"Open calculator"
+
+"Tell me the weather"
+
+"Shutdown the system"
 
 
 
