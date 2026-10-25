@@ -14,6 +14,8 @@ API key:   Free tier at https://aistudio.google.com/app/apikey
 import json
 import os
 import re
+
+from openai import api_key
 from utils.logger import get_logger
 
 logger = get_logger("llm_bridge")
@@ -261,7 +263,11 @@ def _load_key_from_config() -> str:
 
 def get_llm_bridge(api_key: str = "") -> LLMBridge:
     global _bridge
-    resolved_key = (api_key or _load_key_from_config() or os.getenv("GEMINI_API_KEY", "")).strip()
+    
+    config_key = (api_key or _load_key_from_config() or "").strip()
+    env_key = os.getenv("GEMINI_API_KEY", "").strip()
+    resolved_key = config_key if _is_valid_api_key(config_key) else env_key
+
     if _bridge is None or (not _bridge.available and _is_valid_api_key(resolved_key)):
         _bridge = LLMBridge(api_key=resolved_key)
     return _bridge
